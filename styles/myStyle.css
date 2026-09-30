@@ -1,0 +1,1111 @@
+﻿/* =======================================
+   הגדרות כלליות, רקע ופונט גוף האתר
+======================================= */
+body {
+    direction: rtl;
+    background-color: #050716;
+    background-image: url('../images/Background.png');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    position: relative;
+}
+
+/* קונטיינר ממורכז */
+#container {
+    width: 960px;
+    margin: 0 auto;
+    position: relative;
+    min-height: 760px;
+    z-index: 5;
+}
+
+/* =======================================
+   תפריט ניווט ראשי - ממורכז
+======================================= */
+header {
+    width: 100%;
+    padding-top: 15px;
+}
+
+#mainNav {
+    text-align: center;
+    width: 100%;
+}
+
+#mainNav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+#mainNav > ul > li {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    margin: 0 4px;
+}
+
+#logoItem {
+    margin-left: 15px;
+}
+
+#logoItem img {
+    height: 52px;
+    width: auto;
+    vertical-align: middle;
+}
+
+#mainNav > ul > li > a {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 8px 14px;
+    border-radius: 8px;
+    border: 1px solid transparent;
+}
+
+#mainNav > ul > li > a:hover {
+    background-color: rgba(255, 255, 255, 0.12);
+    border: 1px solid #8c9eff;
+}
+
+#mainNav > ul > li > a:active {
+    background-color: #3d5afe;
+}
+
+/* תת-תפריט נפתח */
+#mainNav ul li ul {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    width: 220px;
+    background-color: #0c122c;
+    border: 1px solid #536dfe;
+    border-radius: 6px;
+    padding: 6px 0;
+    z-index: 1000;
+    text-align: right;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+#mainNav ul li ul li {
+    display: block;
+    width: 100%;
+    margin: 0;
+}
+
+#mainNav ul li ul li a {
+    display: block;
+    padding: 9px 14px;
+    color: #c5cae9;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+#mainNav ul li ul li a:hover {
+    background-color: #1a237e;
+    color: #ffffff;
+}
+
+#mainNav ul li:hover > ul {
+    display: block;
+}
+
+/* =======================================
+   כוכב הלכת - מוגדל, בולט ונחתך בשמאל
+======================================= */
+#homePlanet {
+    position: absolute;
+    left: -190px;       /* מוסט שמאלה כדי שלא ייגע בטקסט */
+    top: 150px;
+    width: 450px;       /* מוגדל ובולט מאוד */
+    height: auto;
+    z-index: 1;
+    pointer-events: none;
+}
+
+/* =======================================
+   אזור התוכן המרכזי - הועלה מעט למעלה
+======================================= */
+#homeContent {
+    text-align: center;
+    padding-top: 85px;  /* הועלה למעלה (במקום 140px) */
+    width: 820px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 10;
+}
+
+/* כותרת ראשית h1 - גופן Heebo */
+#homeContent h1 {
+    font-family: 'Heebo', sans-serif;
+    font-size: 58px;
+    font-weight: 900;
+    margin: 0 auto 24px auto;
+    color: #80d8ff;
+    background: linear-gradient(90deg, #b388ff 0%, #80d8ff 50%, #ea80fc 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 0.5px;
+}
+
+/* פסקאות הטקסט - מורחקות למטה מהכותרת */
+.intro-lead {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.7;
+    color: #ffffff;
+    margin: 55px auto 26px auto; /* 55px עליון מרחיק את הפסקה הראשונה ישירות למטה מהכותרת */
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.intro-sub {
+    font-size: 19px;
+    line-height: 1.8;
+    color: #d1d5db;
+    margin: 0 auto 30px auto;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* כפתור "התחל מסע!" - מורחק למטה מהטקסט */
+.start-btn {
+    display: inline-block;
+    background-color: #ffffff;
+    color: #0b1028;
+    text-decoration: none;
+    font-size: 21px;
+    font-weight: bold;
+    padding: 13px 44px;
+    border-radius: 30px;
+    margin-top: 30px; /* מרחיק את הכפתור כלפי מטה מהפסקאות */
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.25);
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.start-btn:hover {
+    background-color: #e2e8f0;
+    color: #1a237e;
+    transform: scale(1.05);
+}
+
+.start-btn:active {
+    background-color: #9fa8da;
+}
+
+/* =======================================
+   תחתית האתר (Footer)
+======================================= */
+footer {
+    position: absolute;
+    bottom: 25px;
+    width: 100%;
+    text-align: center;
+}
+
+footer nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer nav ul li {
+    display: inline-block;
+    margin: 0 12px;
+}
+
+footer nav ul li a {
+    color: #90a4ae;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+footer nav ul li a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/* =======================================
+   פירורי לחם (Breadcrumbs) - לפי המצגת
+======================================= */
+.breadcrumbs {
+    padding: 10px 15px 0 0;
+}
+
+.breadcrumbs ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.breadcrumbs ol li {
+    display: inline-block;
+    font-size: 14px;
+    color: #90a4ae;
+}
+
+.breadcrumbs ol li a {
+    color: #80d8ff;
+    text-decoration: none;
+}
+
+.breadcrumbs ol li a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumbs ol li:after {
+    content: " < ";
+    padding: 0 6px;
+    color: #b0bec5;
+}
+
+.breadcrumbs ol li:last-child {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.breadcrumbs ol li:last-child:after {
+    content: "";
+}
+
+/* =======================================
+   פירורי לחם - מיקום מוחלט ללא הזזת הניווט
+======================================= */
+.breadcrumbs {
+    position: absolute;
+    top: 75px;
+    right: 15px;
+    z-index: 10;
+}
+
+.breadcrumbs ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.breadcrumbs ol li {
+    display: inline-block;
+    font-size: 14px;
+    color: #90a4ae;
+}
+
+.breadcrumbs ol li a {
+    color: #80d8ff;
+    text-decoration: none;
+}
+
+.breadcrumbs ol li a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumbs ol li:after {
+    content: " < ";
+    padding: 0 6px;
+    color: #b0bec5;
+}
+
+.breadcrumbs ol li:last-child {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.breadcrumbs ol li:last-child:after {
+    content: "";
+}
+
+/* =======================================
+   פירורי לחם - ללא הזזת תפריט הניווט
+======================================= */
+.breadcrumbs {
+    position: absolute;
+    top: 75px;
+    right: 15px;
+    z-index: 10;
+}
+
+.breadcrumbs ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.breadcrumbs ol li {
+    display: inline-block;
+    font-size: 14px;
+    color: #90a4ae;
+}
+
+.breadcrumbs ol li a {
+    color: #80d8ff;
+    text-decoration: none;
+}
+
+.breadcrumbs ol li a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumbs ol li:after {
+    content: " < ";
+    padding: 0 6px;
+    color: #b0bec5;
+}
+
+.breadcrumbs ol li:last-child {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.breadcrumbs ol li:last-child:after {
+    content: "";
+}
+
+/* =======================================
+   עמוד מערכת השמש (solarSystem.html)
+======================================= */
+#solarContent {
+    text-align: center;
+    padding-top: 95px;
+    position: relative;
+}
+
+/* תיבת הכותרת המרכזית */
+.solar-title-box {
+    display: inline-block;
+    border: 2px dashed #00e5ff;
+    border-radius: 14px;
+    padding: 20px 42px;
+    background-color: rgba(10, 20, 50, 0.45);
+}
+
+.solar-title-box h1 {
+    font-family: 'Heebo', sans-serif;
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 1.5;
+    color: #ffffff;
+    margin: 0;
+    letter-spacing: 0.5px;
+}
+
+/* שורות הטקסט - מורדות למטה משמעותית מהכותרת */
+.solar-description {
+    margin-top: 90px; /* מרווח גדול שמוריד את הטקסט למטה */
+}
+
+.solar-description p {
+    font-size: 22px;
+    line-height: 1.7;
+    color: #cfd8dc;
+    margin: 0 auto 16px auto;
+}
+
+.solar-description .solar-cta {
+    font-size: 25px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-top: 24px;
+    margin-bottom: 40px;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.8);
+}
+/* =======================================
+   מפת כוכבי הלכת - מוזזת שמאלה וממורכזת
+======================================= */
+#solarSystemMap {
+    position: relative;
+    width: 1100px;
+    left: 80px;         /* דוחף את כל גוש הכוכבים שמאלה */
+    right: auto;
+    height: 520px;
+    margin: 0 auto 30px auto;
+}
+
+/* רכיב כוכב לכת כללי */
+.planet-node {
+    position: absolute;
+    display: block;
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.planet-node img {
+    display: block;
+    width: 100%;
+    height: auto;
+    filter: drop-shadow(0 0 14px rgba(255, 255, 255, 0.25));
+}
+
+/* שם הכוכב - מוצג בתוך מרכז הכוכב בלחיצה */
+.planet-name {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(11, 18, 44, 0.88);
+    color: #ffffff;
+    border: 1px solid #00e5ff;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    white-space: nowrap;
+    box-shadow: 0 0 12px rgba(0, 229, 255, 0.6);
+    z-index: 50;
+    pointer-events: none;
+}
+
+/* אינטראקציית לחיצה */
+.planet-node:focus,
+.planet-node:active {
+    transform: scale(1.1);
+}
+
+.planet-node:focus .planet-name,
+.planet-node:active .planet-name {
+    display: block;
+}
+
+/* =======================================
+   מיקומי 8 הכוכבים (שמירה מדויקת על היחסים)
+======================================= */
+
+/* שבתאי (שמאל עליון) */
+.planet-saturn {
+    top: -75px;
+    left: -70px;
+    width: 190px;
+}
+
+/* צדק (מרכז-שמאל עליון) */
+.planet-jupiter {
+    top: 60px;
+    left: 250px;
+    width: 145px;
+}
+
+/* כדור הארץ (מרכז-ימין עליון) */
+.planet-earth {
+    top: 25px;
+    left: 650px;
+    width: 125px;
+}
+
+/* מאדים (קצה ימני עליון) */
+.planet-mars {
+    top: -50px;
+    right: 10px;
+    width: 125px;
+}
+
+/* כוכב חמה (קצה שמאלי תחתון) */
+.planet-mercury {
+    top: 250px;
+    left: -10px;
+    width: 105px;
+}
+
+/* אורנוס (שמאל-מרכז תחתון) */
+.planet-uranus {
+    top: 350px;
+    left: 220px;
+    width: 130px;
+}
+
+/* נוגה (מרכז תחתון) */
+.planet-venus {
+    top: 280px;
+    left: 630px;
+    width: 120px;
+}
+
+/* נפטון (ימין תחתון) */
+.planet-neptune {
+    top: 300px;
+    right: 10px;
+    width: 135px;
+}
+/* =======================================
+   עמוד תצפיות שמיים (skyObservations.html)
+======================================= */
+#observationsContent {
+    padding-top: 100px;
+    width: 920px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* כותרת ראשית ותת כותרת */
+.page-title-box {
+    margin-bottom: 30px;
+}
+
+.page-title-box h1 {
+    font-family: 'Heebo', sans-serif;
+    font-size: 46px;
+    font-weight: 900;
+    color: #80d8ff;
+    background: linear-gradient(90deg, #b388ff 0%, #80d8ff 50%, #ea80fc 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0 0 16px 0;
+    letter-spacing: 0.5px;
+}
+
+.page-title-box .subtitle {
+    font-size: 21px;
+    color: #cfd8dc;
+    line-height: 1.6;
+    margin: 0;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* אזור "איך מתחילים?" */
+.obs-cards-container {
+    margin-top: 85px;
+    margin-bottom: 70px;
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.obs-cards-container h2 {
+    font-family: 'Heebo', sans-serif;
+    font-size: 32px;
+    font-weight: 800;
+    color: #00e5ff;
+    margin-bottom: 35px;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+/* שורת הכרטיסיות */
+.cards-grid {
+    text-align: center;
+    width: 100%;
+}
+
+/* עיצוב כרטיסיית מידע בודדת */
+.obs-card {
+    display: inline-block;
+    width: 270px;
+    min-height: 250px;
+    margin: 0 16px;
+    padding: 28px 20px;
+    background-color: rgba(14, 23, 58, 0.7);
+    border: 1px solid rgba(128, 216, 255, 0.35);
+    border-radius: 16px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+    vertical-align: top;
+    text-align: center;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: transform 0.3s ease, border-color 0.3s ease; /* אנימציה חלקה */
+}
+
+/* הגדלה קלה והבלטה במעבר עכבר על הכרטיסייה */
+.obs-card:hover {
+    transform: scale(1.04);
+    border-color: #00e5ff;
+}
+
+/* כותרת הכרטיסייה */
+.obs-card h3 {
+    font-family: 'Heebo', sans-serif;
+    font-size: 21px;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 0 0 16px 0;
+    text-align: center;
+    border-bottom: 1px solid rgba(0, 229, 255, 0.3);
+    padding-bottom: 10px;
+    min-height: 32px;              /* מיישר את גובה הכותרות והקו התחתון לקו אחיד */
+}
+
+/* גוף הטקסט של הכרטיסייה */
+.obs-card p {
+    font-size: 15.5px;
+    line-height: 1.7;
+    color: #cfd8dc;
+    margin: 0;
+    text-align: center;
+}
+/* =======================================
+   כותרת והסבר הסרטון (מוגדלים ומרוחקים)
+======================================= */
+.video-intro-box {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 35px;       /* מרחיק את הסרטון כלפי מטה מהטקסט */
+}
+
+.video-intro-box h2 {
+    font-family: 'Heebo', sans-serif;
+    font-size: 30px;           /* כותרת מוגדלת */
+    font-weight: 800;
+    color: #00e5ff;
+    margin: 0 0 14px 0;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+.video-intro-box p {
+    font-size: 19px;           /* טקסט מוגדל */
+    line-height: 1.6;
+    color: #cfd8dc;
+    margin: 0 auto;
+}
+/* =======================================
+   מעטפת הסרטון והטלסקופים (מורדים למטה)
+======================================= */
+.video-container-relative {
+    position: relative;
+    width: 960px;
+    margin: 0 auto 70px auto;  /* מרווח תחתון של 70px מונע דריסה של ה-Footer */
+    text-align: center;
+}
+
+/* טלסקופים מוגדלים משמעותית */
+.side-telescope {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 240px;              /* הוגדל משמעותית מ-150px ל-240px */
+    height: auto;
+    filter: drop-shadow(0 0 12px rgba(128, 216, 255, 0.35));
+    cursor: pointer;
+    transition: transform 0.3s ease; /* אנימציה חלקה בכניסה וביציאה */
+}
+
+/* הגדלה קלה במעבר עכבר על הטלסקופ */
+.side-telescope:hover {
+    transform: translateY(-50%) scale(1.06);
+}
+
+/* טלסקופ ימין */
+.telescope-right {
+    right: -150px;
+}
+
+/* טלסקופ שמאל */
+.telescope-left {
+    left: -100px;
+}
+
+/* נגן הווידאו הממורכז */
+.video-wrapper {
+    position: relative;
+    width: 440px;
+    height: 248px;
+    margin: 0 auto;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.85);
+    border: 1px solid #536dfe;
+}
+
+.video-wrapper iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* פוטר סטטי למניעת כל חפיפה */
+.static-footer {
+    position: static;
+    margin-top: 50px;
+    padding-bottom: 35px;
+    width: 100%;
+    text-align: center;
+}
+/* =======================================
+   עמוד אודות - על האתר שלנו (about.html)
+======================================= */
+#aboutContent {
+    padding-top: 100px;
+    width: 960px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* מיכל הטקסט הממורכז */
+.about-text-container {
+    width: 900px;                      /* הרחבה מתונה שמאפשרת לטקסט להיכנס ב-3 שורות בדיוק */
+    margin: 0 auto 50px auto;
+    text-align: center;
+}
+
+/* כותרת הדף - צבעונית בגרדיאנט */
+.about-colored-title {
+    font-family: 'Heebo', sans-serif;
+    font-size: 44px;
+    font-weight: 900;
+    color: #80d8ff;
+    background: linear-gradient(90deg, #b388ff 0%, #80d8ff 50%, #ea80fc 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0 0 35px 0;
+    letter-spacing: 0.5px;
+    display: inline-block;
+}
+
+/* פסקה ראשונה - מוגדרת בדיוק ל-3 שורות */
+.about-main-paragraph {
+    font-family: 'Arial', sans-serif;
+    font-size: 18.5px;                 /* גודל מדויק שמונע גלישה לשורה 4 */
+    line-height: 1.75;
+    color: #ffffff;
+    margin: 0 auto 55px auto;
+    max-width: 890px;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.9);
+}
+
+/* פסקת קרדיטים וקורס */
+.about-credits-paragraph {
+    font-family: 'Arial', sans-serif;
+    font-size: 17.5px;
+    line-height: 1.8;
+    color: #ffffff;
+    margin: 0 auto 40px auto;
+    max-width: 820px;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.9);
+}
+
+/* אזור לוגו HIT - כולל רקע לבן קטן ומעוגל */
+.hit-logo-wrapper {
+    margin: 25px auto 20px auto;
+    text-align: center;
+}
+
+.hit-logo-wrapper a {
+    display: inline-block;
+    background-color: #ffffff;
+    padding: 8px 16px;
+    border-radius: 12px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.6);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hit-logo-wrapper a:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 18px rgba(0, 229, 255, 0.5);
+}
+
+.hit-logo-wrapper img {
+    height: 44px;
+    width: auto;
+    display: block;
+}
+
+/* =======================================
+   עמוד יצירת קשר (contactUs.html)
+======================================= */
+#contactContent {
+    padding-top: 95px;
+    width: 960px;
+    margin: 0 auto 50px auto;
+    text-align: center;
+}
+
+/* כותרת עליונה ושורת טקסט מוגדלות */
+.contact-header {
+    margin-bottom: 25px;
+}
+
+.contact-title {
+    font-family: 'Arial', sans-serif;
+    font-size: 25px;                   /* הוגדל מ-21px */
+    font-weight: bold;
+    color: #ffffff;
+    line-height: 1.6;
+    margin: 0 0 14px 0;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.85);
+}
+
+.contact-subtitle {
+    font-family: 'Arial', sans-serif;
+    font-size: 23px;                   /* הוגדל מ-20px */
+    font-weight: bold;
+    color: #ffd54f;
+    margin: 0;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.9);
+}
+
+/* מעטפת הטופס והאלמנטים - מורדת משמעותית כלפי מטה */
+.contact-wrapper-relative {
+    position: relative;
+    width: 900px;
+    margin: 55px auto 0 auto;          /* הורדת הטופס והאלמנטים משמעותית למטה */
+    text-align: center;
+}
+
+/* אלמנטים זוהרים בצדדים */
+.contact-element {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 140px;
+    height: auto;
+    pointer-events: none;
+    filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.6));
+}
+
+.element-right {
+    right: -300px;
+    top: 40px;
+    width: 250px;
+}
+
+.element-left {
+    left: -200px;
+    top: 300px;
+    width: 200px;
+}
+
+/* כרטיס הטופס המרכזי */
+.contact-card {
+    display: inline-block;
+    width: 460px;
+    background-color: rgba(14, 23, 58, 0.8);
+    border: 2px solid rgba(128, 216, 255, 0.6);
+    border-radius: 20px;
+    padding: 32px 30px;
+    box-sizing: border-box;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+    text-align: right;
+}
+
+/* קבוצת שדה בטופס */
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    font-family: 'Heebo', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 6px;
+}
+
+/* סימון שדה חובה */
+.form-group .req {
+    color: #ff5252;
+    font-weight: bold;
+}
+
+/* תיבות קלט והודעה */
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 100%;
+    background-color: rgba(9, 14, 38, 0.9);
+    border: 1.5px solid rgba(128, 216, 255, 0.45);
+    border-radius: 10px;
+    padding: 10px 14px;
+    font-family: 'Arial', sans-serif;
+    font-size: 15px;
+    color: #ffffff;
+    box-sizing: border-box;
+    outline: none;
+    transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group textarea:focus {
+    border-color: #00e5ff;
+    box-shadow: 0 0 10px rgba(0, 229, 255, 0.5);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 85px;
+}
+
+/* כפתור שליחה */
+.form-submit-row {
+    text-align: center;
+    margin-top: 24px;
+}
+
+.submit-btn {
+    font-family: 'Heebo', sans-serif;
+    font-size: 17px;
+    font-weight: 800;
+    color: #ffffff;
+    background: linear-gradient(90deg, #ffb74d 0%, #ffa726 50%, #ff9800 100%);
+    border: none;
+    border-radius: 25px;
+    padding: 10px 32px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(255, 167, 38, 0.5);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.submit-btn:hover {
+    transform: scale(1.04);
+    box-shadow: 0 6px 20px rgba(255, 183, 77, 0.8);
+    background: linear-gradient(90deg, #ffa726 0%, #ff9800 100%);
+}
+
+.submit-btn:active {
+    transform: scale(0.98);
+}
+
+/* =======================================
+   הגדרת קישורים לא פעילים לפי המצגות
+======================================= */
+.notActive {
+    cursor: not-allowed;
+    color: #90a4ae !important;
+    text-decoration: none;
+}
+
+/* =======================================
+   הגדרת קישורים לא פעילים לפי המצגות
+======================================= */
+.notActive {
+    cursor: not-allowed;
+    text-decoration: none;
+}
+
+/* =======================================
+   עמוד מפת האתר (siteMap.html)
+======================================= */
+#sitemapContent {
+    padding-top: 95px;
+    width: 960px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* כותרת הדף הצבעונית */
+.sitemap-header {
+    margin-bottom: 45px;
+    text-align: center;
+}
+
+.sitemap-colored-title {
+    font-family: 'Heebo', sans-serif;
+    font-size: 46px;
+    font-weight: 900;
+    color: #80d8ff;
+    background: linear-gradient(90deg, #b388ff 0%, #80d8ff 50%, #ea80fc 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
+    letter-spacing: 0.5px;
+    display: inline-block;
+}
+
+/* מעטפת יחסית לטורים ולאובייקט הקישוטי */
+.sitemap-wrapper-relative {
+    position: relative;
+    width: 960px;
+    min-height: 420px;
+    margin: 0 auto 50px auto;
+}
+
+/* פריסת הטורים של מפת האתר */
+.sitemap-columns-grid {
+    display: table;
+    width: 100%;
+    text-align: right;
+    direction: rtl;
+}
+
+.sitemap-col {
+    display: table-cell;
+    vertical-align: top;
+    padding: 0 10px;
+}
+
+/* כותרת ראש טור */
+.sitemap-col h2 {
+    font-family: 'Heebo', sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    color: #ffffff;
+    margin: 0 0 18px 0;
+    line-height: 1.3;
+}
+
+.sitemap-col h2 a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.sitemap-col h2 a:hover {
+    color: #00e5ff;
+}
+
+/* רשימת תתי-העמודים - צבע לבן רגיל */
+.sitemap-col ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sitemap-col ul li {
+    margin-bottom: 12px;
+}
+
+.sitemap-col ul li a {
+    font-family: 'Arial', sans-serif;
+    font-size: 15.5px;
+    color: #ffffff;            /* צבע לבן רגיל ונקי לכל תתי הנושאים */
+    text-decoration: none;
+    line-height: 1.5;
+    transition: color 0.2s ease;
+}
+
+/* אפקט מעבר עכבר לקישורים הפעילים */
+.sitemap-col ul li a:hover:not(.notActive) {
+    color: #00e5ff;
+    text-decoration: underline;
+}
+
+/* אובייקט element3.png בצד התחתון */
+.sitemap-planet-wrapper {
+    position: absolute;
+    bottom: 30px;
+    right: 40px;
+    pointer-events: none;
+}
+
+.sitemap-planet-img {
+    width: 900px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+/* עיצוב  הכרטיסייה לתצוגה אופקית */
+.obs-card {
+    display: inline-flex; /* התוספת של המילה inline תחזיר אותן לשורה אחת */
+    align-items: flex-start;
+    gap: 15px;
+}
+
+/* שולט בגודל האייקון */
+.card-icon {
+    width: 40px;
+    height: auto;
+    flex-shrink: 0;
+}
+
+/* הסרת רווחים מיותרים מהכותרת */
+.card-text h3 {
+    margin-top: 0;
+}

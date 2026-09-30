@@ -1,0 +1,164 @@
+﻿<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="utf-8" />
+    <title>מסע בין כוכבים - מערכת השמש</title>
+    <meta name="description" content="מדריך על מערכת השמש ו-8 כוכבי הלכת המקיפים אותה" />
+    <meta name="keywords" content="מסע בין כוכבים, אסטרונומיה, גלקסיות, מערכת השמש, כוכבי לכת, חלל" />
+    <meta name="author" content="אור וג'ימה, עדן צוקרמן" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/logo.png" />
+
+    <!-- Google Font: Heebo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@700;800;900&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link href="styles/reset.css" rel="stylesheet" />
+    <link href="styles/myStyle.css" rel="stylesheet" />
+
+    <!-- Scripts -->
+    <script src="jScripts/JavaScript.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="container">
+
+    <!-- אזור עליון: תפריט ניווט זהה בדיוק לדף הבית -->
+    <header>
+        <nav id="mainNav" aria-label="ניווט ראשי">
+            <ul>
+                <li id="logoItem">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="לוגו מסע בין כוכבים" title="מסע בין כוכבים - דף הבית" />
+                    </a>
+                </li>
+
+                <!-- קטגוריה 1: גלקסיות (לא פותחו דפים) -->
+                <li>
+                    <a href="#" class="notActive" onclick="return false;">גלקסיות</a>
+                    <ul>
+                        <li><a href="#" class="notActive" onclick="return false;">שביל החלב</a></li>
+                        <li><a href="#" class="notActive" onclick="return false;">סוגי גלקסיות</a></li>
+                        <li><a href="#" class="notActive" onclick="return false;">התנגשות שביל החלב והאנדרומדה</a></li>
+                    </ul>
+                </li>
+
+                <!-- קטגוריה 2: עולם הכוכבים (רק מערכת השמש פותח) -->
+                <li>
+                    <a href="#">עולם הכוכבים</a>
+                    <ul>
+                        <li><a href="#" class="notActive" onclick="return false;">כוכבי שבת מול כוכבי לכת</a></li>
+                        <li><a href="#" class="notActive" onclick="return false;">חורים שחורים וננסים לבנים</a></li>
+                        <li><a href="solarSystem.html">מערכת השמש</a></li>
+                    </ul>
+                </li>
+
+                <!-- קטגוריה 3: חקר היקום (רק תצפיות שמיים פותח) -->
+                <li>
+                    <a href="#">חקר היקום</a>
+                    <ul>
+                        <li><a href="skyObservations.html">תצפיות שמיים</a></li>
+                        <li><a href="#" class="notActive" onclick="return false;">טלסקופי חלל ומחקר</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="about.html">אודות</a></li>
+                <li><a href="contactUs.html">יצירת קשר</a></li>
+                <li><a href="siteMap.html">מפת האתר</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- פירורי לחם שלא מזיזים את הניווט -->
+    <nav class="breadcrumbs" aria-label="פירורי לחם">
+        <ol>
+            <li><a href="index.html">דף הבית</a></li>
+            <li>עולם הכוכבים</li>
+            <li>מערכת השמש</li>
+        </ol>
+    </nav>
+
+    <!-- תוכן העמוד מורד למטה ופרוס -->
+    <main id="solarContent">
+        <div class="solar-title-box">
+            <h1>מערכות השמש המוכרות לנו מורכבות בדרך כלל<br />מכוכב מרכזי (השמש) המוקף בכוכבי לכת.</h1>
+        </div>
+
+        <section class="solar-description">
+            <p>
+                במערכת השמש שלנו 8 כוכבי לכת וכן ירחיהם של כוכבי הלכת, אסטרואידים שביטים ואובייקטים קטנים נוספים.
+            </p>
+            <p class="solar-cta">
+                חושבים שתזהו כל כוכב לכת? לחצו וגלו!
+            </p>
+        </section>
+
+        <!-- מפת כוכבי הלכת המוגדלים והמפוזרים -->
+        <div id="solarSystemMap">
+            <!-- כוכב 1: מאדים (למעלה מימין) -->
+            <a href="javascript:void(0)" class="planet-node planet-mars" title="לחץ לזיהוי">
+                <img src="images/mars.png" alt="כוכב הלכת מאדים" />
+                <span class="planet-name">מאדים</span>
+            </a>
+
+            <!-- כוכב 2: שבתאי (למעלה משמאל) -->
+            <a href="javascript:void(0)" class="planet-node planet-saturn" title="לחץ לזיהוי">
+                <img src="images/saturn.png" alt="כוכב הלכת שבתאי" />
+                <span class="planet-name">שבתאי</span>
+            </a>
+
+            <!-- כוכב 3: נוגה (מרכז ימין) -->
+            <a href="javascript:void(0)" class="planet-node planet-venus" title="לחץ לזיהוי">
+                <img src="images/venus.png" alt="כוכב הלכת נוגה" />
+                <span class="planet-name">נוגה</span>
+            </a>
+
+            <!-- כוכב 4: צדק (מרכז) -->
+            <a href="javascript:void(0)" class="planet-node planet-jupiter" title="לחץ לזיהוי">
+                <img src="images/jupiter.png" alt="כוכב הלכת צדק" />
+                <span class="planet-name">צדק</span>
+            </a>
+
+            <!-- כוכב 5: נפטון (מרכז שמאל) -->
+            <a href="javascript:void(0)" class="planet-node planet-neptune" title="לחץ לזיהוי">
+                <img src="images/neptune.png" alt="כוכב הלכת נפטון" />
+                <span class="planet-name">נפטון</span>
+            </a>
+
+            <!-- כוכב 6: כדור הארץ (למטה בקצה הימני) -->
+            <a href="javascript:void(0)" class="planet-node planet-earth" title="לחץ לזיהוי">
+                <img src="images/earth.png" alt="כוכב הלכת כדור הארץ" />
+                <span class="planet-name">כדור הארץ</span>
+            </a>
+
+            <!-- כוכב 7: אורנוס (מרכז תחתון) -->
+            <a href="javascript:void(0)" class="planet-node planet-uranus" title="לחץ לזיהוי">
+                <img src="images/uranus.png" alt="כוכב הלכת אורנוס" />
+                <span class="planet-name">אורנוס</span>
+            </a>
+
+            <!-- כוכב 8: כוכב חמה (למטה בקצה השמאלי) -->
+            <a href="javascript:void(0)" class="planet-node planet-mercury" title="לחץ לזיהוי">
+                <img src="images/mercury.png" alt="כוכב הלכת חמה" />
+                <span class="planet-name">חמה</span>
+            </a>
+        </div>
+    </main>
+
+    <!-- תחתית האתר -->
+    <footer>
+        <nav aria-label="ניווט תחתון">
+            <ul>
+                <li><a href="about.html">אודות</a></li>
+                <li><a href="contactUs.html">יצירת קשר</a></li>
+                <li><a href="siteMap.html">מפת האתר</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+</div>
+</body>
+</html>

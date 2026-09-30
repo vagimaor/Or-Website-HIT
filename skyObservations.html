@@ -1,0 +1,169 @@
+﻿<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="utf-8" />
+    <title>מסע בין כוכבים - המדריך לחוקר המתחיל</title>
+    <meta name="description" content="המדריך לחוקר המתחיל - כל מה שצריך לדעת כדי לצפות בכוכבים, במטר מטאורים ובאירועים שמימיים מרהיבים" />
+    <meta name="keywords" content="מסע בין כוכבים, תצפיות שמיים, אסטרונומיה, טלסקופ, מטר מטאורים, חקר היקום" />
+    <meta name="author" content="אור וג'ימה, עדן צוקרמן" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/logo.png" />
+
+    <!-- Google Font: Heebo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@700;800;900&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link href="styles/reset.css" rel="stylesheet" />
+    <link href="styles/myStyle.css" rel="stylesheet" />
+
+    <!-- Scripts -->
+    <script src="jScripts/JavaScript.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="container" class="long-page-container">
+
+    <!-- אזור עליון: תפריט ניווט ולוגו -->
+    <header>
+        <nav id="mainNav" aria-label="ניווט ראשי">
+            <ul>
+                <li id="logoItem">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="לוגו מסע בין כוכבים" title="מסע בין כוכבים - דף הבית" />
+                    </a>
+                </li>
+
+                <!-- קטגוריה 1: גלקסיות (לא פותחו דפים) -->
+                <li>
+                    <a href="#" class="notActive" onclick="return false;">גלקסיות</a>
+                    <ul>
+                        <li><a href="#" class="notActive" onclick="return false;">שביל החלב</a></li>
+                        <li><a href="#" class="notActive" onclick="return false;">סוגי גלקסיות</a></li>
+                        <li><a href="#" class="notActive" onclick="return false;">התנגשות שביל החלב והאנדרומדה</a></li>
+                    </ul>
+                </li>
+
+                <!-- קטגוריה 2: עולם הכוכבים (רק מערכת השמש פותח) -->
+                <li>
+                    <a href="#">עולם הכוכבים</a>
+                    <ul>
+                        <li><a href="#" class="notActive" onclick="return false;">כוכבי שבת מול כוכבי לכת</a></li>
+                        <li><a href="#" class="notActive" onclick="return false;">חורים שחורים וננסים לבנים</a></li>
+                        <li><a href="solarSystem.html">מערכת השמש</a></li>
+                    </ul>
+                </li>
+
+                <!-- קטגוריה 3: חקר היקום (רק תצפיות שמיים פותח) -->
+                <li>
+                    <a href="#">חקר היקום</a>
+                    <ul>
+                        <li><a href="skyObservations.html">תצפיות שמיים</a></li>
+                        <li><a href="#" class="notActive" onclick="return false;">טלסקופי חלל ומחקר</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="about.html">אודות</a></li>
+                <li><a href="contactUs.html">יצירת קשר</a></li>
+                <li><a href="siteMap.html">מפת האתר</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- פירורי לחם -->
+    <nav class="breadcrumbs" aria-label="פירורי לחם">
+        <ol>
+            <li><a href="index.html">דף הבית</a></li>
+            <li>חקר היקום</li>
+            <li>תצפיות שמיים</li>
+        </ol>
+    </nav>
+
+    <!-- אזור התוכן המרכזי -->
+    <main id="observationsContent">
+
+        <!-- כותרת ראשית ותת כותרת מעודכנות -->
+        <header class="page-title-box">
+            <h1>המדריך לחוקר המתחיל</h1>
+            <p class="subtitle">כל מה שצריך לדעת כדי לצפות בכוכבים, במטר מטאורים ובאירועים שמימיים מרהיבים</p>
+        </header>
+        <!-- אזור "איך מתחילים?" ו-3 כרטיסיות המידע המעודכנות -->
+        <section class="obs-cards-container">
+            <h2>איך מתחילים?</h2>
+            <div class="cards-grid">
+
+                <!-- כרטיסייה 1: התרחקות מזיהום אור -->
+                <article class="obs-card">
+                    <img src="images/dust.png" alt="אייקון זיהום אור" class="card-icon">
+                    <div class="card-text">
+                        <h3>התרחקות מזיהום אור</h3>
+                        <p>מתרחקים מאורות העיר ככל שניתן. ככל שהסביבה חשוכה יותר, כך נפתחות שכבות האור העדינות של היקום.</p>
+                    </div>
+                </article>
+
+                <!-- כרטיסייה 2: הסתגלות לחושך -->
+                <article class="obs-card">
+                    <img src="images/eyes.png" alt="אייקון עין בחושך" class="card-icon">
+                    <div class="card-text">
+                        <h3>הסתגלות לחושך</h3>
+                        <p>ממתינים כ-15 דקות ללא מסכי טלפון. האישונים יתרחבו ותתחילו להבחין באלפי כוכבים שקודם לא נראו כלל.</p>
+                    </div>
+                </article>
+
+                <!-- כרטיסייה 3: כוכב או כוכב לכת? -->
+                <article class="obs-card">
+                    <img src="images/1saturn.png" alt="אייקון כוכב ולכת" class="card-icon">
+                    <div class="card-text">
+                        <h3>כוכב או כוכב לכת?</h3>
+                        <p>אור מנצנץ ורוטט מעיד על כוכב שבת רחוק. נקודה בוהקת באור יציב, חלק וקבוע היא כוכב לכת שכן במערכת.</p>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- אזור כותרת והסבר לסרטון - מוגדלים ומופרדים -->
+        <section class="video-intro-box">
+            <h2>מדריך לאיתור גרמי שמיים</h2>
+            <p>הסבר קצר על איתור כוכב הצפון, קבוצות כוכבים מרכזיות ומעברי לוויינים:</p>
+        </section>
+
+        <!-- אזור הסרטון המונמך והטלסקופים המוגדלים -->
+        <section class="video-container-relative">
+
+            <!-- טלסקופ ימין מוגדל -->
+            <img src="images/telescope2 (2).png" alt="איור טלסקופ תצפית שמיים" title="טלסקופ תצפית" class="side-telescope telescope-right" />
+
+            <!-- נגן הווידאו -->
+            <div class="video-wrapper">
+                <iframe
+                        src="https://www.youtube.com/embed/NGQ0lrJ5QvA?si=D06YdsjFS0lHwYPQ"
+                        title="מדריך תצפיות שמיים למתחילים"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen>
+                </iframe>
+            </div>
+
+            <!-- טלסקופ שמאל מוגדל -->
+            <img src="images/telescope2 (1).png" alt="איור טלסקופ חלל" title="טלסקופ תצפית" class="side-telescope telescope-left" />
+
+        </section>
+
+    </main>
+
+    <!-- תחתית האתר - מוגנת מדריסה -->
+    <footer class="static-footer">
+        <nav aria-label="ניווט תחתון">
+            <ul>
+                <li><a href="about.html">אודות</a></li>
+                <li><a href="contactUs.html">יצירת קשר</a></li>
+                <li><a href="siteMap.html">מפת האתר</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+</div>
+</body>
+</html>

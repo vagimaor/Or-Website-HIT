@@ -1,0 +1,168 @@
+﻿<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="utf-8" />
+    <title>מסע בין כוכבים - מפת האתר</title>
+    <meta name="description" content="מפת האתר של מסע בין כוכבים - עץ היררכי וריכוז קישורים לכל עמודי האתר ונושאי התוכן" />
+    <meta name="keywords" content="מסע בין כוכבים, מפת האתר, עץ אתר, אסטרונומיה, גלקסיות, מערכת השמש" />
+    <meta name="author" content="אור וג'ימה, עדן צוקרמן" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/logo.png" />
+
+    <!-- Google Font: Heebo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@700;800;900&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link href="styles/reset.css" rel="stylesheet" />
+    <link href="styles/myStyle.css" rel="stylesheet" />
+
+    <!-- Scripts -->
+    <script src="jScripts/JavaScript.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="container">
+
+    <!-- אזור עליון: תפריט ניווט ולוגו אחידים -->
+    <header>
+        <nav id="mainNav" aria-label="ניווט ראשי">
+            <ul>
+                <li id="logoItem">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="לוגו מסע בין כוכבים" title="מסע בין כוכבים - דף הבית" />
+                    </a>
+                </li>
+
+                <!-- קטגוריה 1: גלקסיות (לא פותחו דפים) -->
+                <li>
+                    <a href="#" class="notActive" onclick="return false;">גלקסיות</a>
+                    <ul>
+                        <li><a href="#" class="notActive" onclick="return false;">שביל החלב</a></li>
+                        <li><a href="#" class="notActive" onclick="return false;">סוגי גלקסיות</a></li>
+                        <li><a href="#" class="notActive" onclick="return false;">התנגשות שביל החלב והאנדרומדה</a></li>
+                    </ul>
+                </li>
+
+                <!-- קטגוריה 2: עולם הכוכבים (רק מערכת השמש פותח) -->
+                <li>
+                    <a href="#">עולם הכוכבים</a>
+                    <ul>
+                        <li><a href="#" class="notActive" onclick="return false;">כוכבי שבת מול כוכבי לכת</a></li>
+                        <li><a href="#" class="notActive" onclick="return false;">חורים שחורים וננסים לבנים</a></li>
+                        <li><a href="solarSystem.html">מערכת השמש</a></li>
+                    </ul>
+                </li>
+
+                <!-- קטגוריה 3: חקר היקום (רק תצפיות שמיים פותח) -->
+                <li>
+                    <a href="#">חקר היקום</a>
+                    <ul>
+                        <li><a href="skyObservations.html">תצפיות שמיים</a></li>
+                        <li><a href="#" class="notActive" onclick="return false;">טלסקופי חלל ומחקר</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="about.html">אודות</a></li>
+                <li><a href="contactUs.html">יצירת קשר</a></li>
+                <li><a href="siteMap.html">מפת האתר</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- פירורי לחם -->
+    <nav class="breadcrumbs" aria-label="פירורי לחם">
+        <ol>
+            <li><a href="index.html">דף הבית</a></li>
+            <li>מפת האתר</li>
+        </ol>
+    </nav>
+
+    <!-- תוכן מרכזי של מפת האתר -->
+    <main id="sitemapContent">
+
+        <header class="sitemap-header">
+            <h1 class="sitemap-colored-title">מפת האתר</h1>
+        </header>
+
+        <div class="sitemap-wrapper-relative">
+
+            <!-- עץ היררכי המחולק לעמודות כמו בדוגמה -->
+            <div class="sitemap-columns-grid">
+
+                <!-- עמודה 1: דף הבית -->
+                <section class="sitemap-col">
+                    <h2><a href="index.html">דף הבית</a></h2>
+                </section>
+
+                <!-- עמודה 2: גלקסיות -->
+                <section class="sitemap-col">
+                    <h2><a href="#" class="notActive" onclick="return false;">גלקסיות</a></h2>
+                    <ul>
+                        <li><a href="#" class="notActive" onclick="return false;">שביל החלב</a></li>
+                        <li><a href="#" class="notActive" onclick="return false;">סוגי גלקסיות</a></li>
+                        <li><a href="#" class="notActive" onclick="return false;">התנגשות הגלקסיות</a></li>
+                    </ul>
+                </section>
+
+                <!-- עמודה 3: עולם הכוכבים -->
+                <section class="sitemap-col">
+                    <h2>עולם הכוכבים</h2>
+                    <ul>
+                        <li><a href="#" class="notActive" onclick="return false;">כוכבי שבת מול לכת</a></li>
+                        <li><a href="#" class="notActive" onclick="return false;">חורים שחורים</a></li>
+                        <li><a href="solarSystem.html">מערכת השמש</a></li>
+                    </ul>
+                </section>
+
+                <!-- עמודה 4: חקר היקום -->
+                <section class="sitemap-col">
+                    <h2>חקר היקום</h2>
+                    <ul>
+                        <li><a href="skyObservations.html">תצפיות שמיים</a></li>
+                        <li><a href="#" class="notActive" onclick="return false;">טלסקופי חלל ומחקר</a></li>
+                    </ul>
+                </section>
+
+                <!-- עמודה 5: אודות -->
+                <section class="sitemap-col">
+                    <h2><a href="about.html">אודות</a></h2>
+                </section>
+
+                <!-- עמודה 6: יצירת קשר -->
+                <section class="sitemap-col">
+                    <h2><a href="contactUs.html">צור קשר</a></h2>
+                </section>
+
+                <!-- עמודה 7: מפת האתר -->
+                <section class="sitemap-col">
+                    <h2><a href="siteMap.html">מפת האתר</a></h2>
+                </section>
+
+            </div>
+
+            <!-- אובייקט קישוטי בצד כמו הנורה שבדוגמה -->
+            <div class="sitemap-planet-wrapper">
+                <img src="images/element3.png" alt="איור כוכב לכת" title="כוכב לכת" class="sitemap-planet-img" />
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- תפריט תחתון -->
+    <footer class="static-footer">
+        <nav aria-label="ניווט תחתון">
+            <ul>
+                <li><a href="about.html">אודות</a></li>
+                <li><a href="contactUs.html">יצירת קשר</a></li>
+                <li><a href="siteMap.html">מפת האתר</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+</div>
+</body>
+</html>
