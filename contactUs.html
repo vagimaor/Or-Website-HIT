@@ -3,15 +3,14 @@
 <head>
     <meta charset="utf-8" />
     <title>מסע בין כוכבים - יצירת קשר</title>
-    <meta name="description" content="יצירת קשר עם צוות אתר מסע בין כוכבים - שאילתות על תצפיות, שיתוף תגליות ומשוב" />
+    <meta name="description" content="יצירת קשר עם צוות אתר מסע בין כוכבים - שאלות על תצפיות, שיתוף ומשוב" />
     <meta name="keywords" content="מסע בין כוכבים, יצירת קשר, אסטרונומיה, טופס פנייה, תצפיות חלל" />
     <meta name="author" content="אור וג'ימה, עדן צוקרמן" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
 
     <!-- Favicon -->
     <link rel="icon" href="images/logo.png" />
-
-    <!-- Google Font: Heebo -->
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@700;800;900&display=swap" rel="stylesheet">
@@ -36,7 +35,7 @@
                     </a>
                 </li>
 
-                <!-- קטגוריה 1: גלקסיות (לא פותחו דפים) -->
+                <!-- קטגוריה 1: גלקסיות -->
                 <li>
                     <a href="#" class="notActive" onclick="return false;">גלקסיות</a>
                     <ul>
@@ -80,7 +79,7 @@
         </ol>
     </nav>
 
-    <!-- תוכן מרכזי של עמוד יצירת קשר -->
+    <!-- תוכן מרכזי -->
     <main id="contactContent">
 
         <header class="contact-header">
@@ -90,38 +89,49 @@
 
         <div class="contact-wrapper-relative">
 
-            <!-- אלמנט קישוטי ימין -->
+            <!-- אלמנט -->
             <img src="images/element.png" alt="אלמנט זוהר" class="contact-element element-right" />
 
-            <!-- כרטיס הטופס -->
+            <!--  הטופס -->
             <section class="contact-card">
                 <form action="#" method="post" class="contact-form">
 
-                    <!-- שדה: שם מלא -->
+                    <!-- שם מלא -->
                     <div class="form-group">
                         <label for="fullName">שם מלא <span class="req">*</span></label>
                         <input type="text" id="fullName" name="fullName" placeholder="הקלידו שם מלא" required />
                     </div>
 
-                    <!-- שדה: כתובת אימייל -->
+                    <!-- כתובת אימייל -->
                     <div class="form-group">
                         <label for="userEmail">כתובת אימייל <span class="req">*</span></label>
                         <input type="email" id="userEmail" name="userEmail" placeholder="yourname@example.com" required />
                     </div>
 
-                    <!-- שדה: נושא הפנייה -->
                     <div class="form-group">
                         <label for="subject">נושא הפניה <span class="req">*</span></label>
-                        <input type="text" id="subject" name="subject" placeholder="באיזה עניין תרצו לדבר?" required />
+                        <select id="subject" name="subject" required>
+                            <option value="" disabled selected>בחרו נושא מתוך הרשימה...</option>
+                            <option value="observation">שאלה על תצפית שמיים</option>
+                            <option value="discovery">דיווח על כוכב חדש</option>
+                            <option value="feedback">משוב והצעות לשיפור</option>
+                            <option value="general">סתם בא לנו להגיד שלום</option>
+                        </select>
                     </div>
-
-                    <!-- שדה: הודעה / מה תרצו להגיד לנו -->
+                    
+                    <!-- מה תרצו להגיד לנו -->
                     <div class="form-group">
                         <label for="message">מה תרצו להגיד לנו? <span class="req">*</span></label>
                         <textarea id="message" name="message" rows="4" placeholder="כתבו כאן את הודעתכם..." required></textarea>
                     </div>
 
-                    <!-- כפתור שליחה -->
+                    <!-- תיבת סימון לקבלת עדכונים -->
+                    <div class="form-group form-checkbox-group">
+                        <input type="checkbox" id="newsletter" name="newsletter" />
+                        <label for="newsletter" class="checkbox-label">אני מעוניין לקבל עדכונים על אירועי שמיים ותצפיות למייל</label>
+                    </div>
+                    
+                    <!-- כפתור -->
                     <div class="form-submit-row">
                         <input type="submit" value="שגר הודעה אל החלל" class="submit-btn" />
                     </div>
@@ -129,7 +139,7 @@
                 </form>
             </section>
 
-            <!-- אלמנט קישוטי שמאל -->
+            <!-- אלמנט -->
             <img src="images/element2.png" alt="אלמנט זוהר" class="contact-element element-left" />
 
         </div>
